@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hashtack App</title>
-  <link rel="stylesheet" href="assets/css/reset.min.css">
+	<title>Hashtack App</title>
+	<link rel="stylesheet" href="assets/css/reset.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Poppins:400,500,700,800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/bulma.min.css">
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
@@ -32,25 +32,50 @@
 			</div>
 		</nav>
 	</header>
-		<div class="container">
-			<section class="hero">
-				<div class="hero-body">
-					<div class="seach-body">
-						<div class="search-p">
-							<form class="search">
-								<div class="a-field search__field">
-									<input type="text" id="query" class="r-text-field a-field__input search__input" placeholder="e.g pizza or any word of your preference" required>
-									<button class="r-button search__button search__clear" type="reset"> <span class="search__clear-label">Clear the search form</span> <i class="fas fa-times search__icon search__icon-clear"></i> </button>
-									<label class="a-field__label-wrap search__hint" for="query"> <span class="a-field__label">Type here a hashtag anc click in search</span> </label>
-								</div>
-								<button class="r-button search__button search__submit" type="submit"> <span class="search__submit-label">Search</span> <i class="fas fa-search search__icon search__icon-search"></i> </button>
-							</form>
-							<p class="panel-tabs"> <a class="is-active">Trending</a> <a>#superbowl</a> <a>#vacations</a> <a>#pornfood</a> <a>#donaldtrump</a> <a>#playboy</a> </p>
-						</div>
+	<div class="container">
+		<section class="hero">
+			<div class="hero-body">
+				<div class="seach-body">
+					<div class="search-p">
+						<form class="search">
+							<div class="a-field search__field">
+								<input type="text" id="query" class="r-text-field a-field__input search__input" placeholder="e.g pizza or any word of your preference" required>
+								<button class="r-button search__button search__clear" type="reset"> <span class="search__clear-label">Clear the search form</span> <i class="fas fa-times search__icon search__icon-clear"></i> </button>
+								<label class="a-field__label-wrap search__hint" for="query"> <span class="a-field__label">Type here a hashtag anc click in search</span> </label>
+							</div>
+							<button class="r-button search__button search__submit" type="submit"> <span class="search__submit-label">Search</span> <i class="fas fa-search search__icon search__icon-search"></i> </button>
+						</form>
 					</div>
 				</div>
-    </div>
-    <section class="section">
+			</div>
+	</div>
+	<div class="tabs is-centered">
+		<ul>
+			<li class="is-active">
+				  <span class="icon is-small"><i class="fas fa-fire" style="color: #e25555;"></i></span>
+				  <span>Trending</span>&nbsp;&nbsp;
+			  </li>
+			  <li>
+				<a> <span>#Music</span> </a>
+			</li>
+			<li>
+				<a> <span>#Videos</span> </a>
+			</li>
+			<li>
+				<a> <span>#News</span> </a>
+			</li>
+			<li>
+				<a> <span>#Pornfood</span> </a>
+			</li>
+			<li>
+				<a> <span>#DonaldTrump</span> </a>
+			</li>
+			<li>
+				<a> <span>#PlayBoy</span> </a>
+			</li>
+		</ul>
+	</div>
+	<section class="section">
 		<div class="container">
 			<div class="columns is-multiline">
 				<div class="column is-one-quarter-desktop is-half-tablet">
@@ -275,18 +300,18 @@
 			<div class="load-body">
 				<button id="button" class="button is-large is-success is-rounded search-p">load more</button>
 			</div>
-			</section>
-			<footer class="footer is-gray">
-				<div class="container">
-					<div class="content has-text-centered">
-						<p> <strong>#hashtrack</strong> Made with <span style="color: #e25555;"><i class="fas fa-heart"></i></span> by UCF CodingBootCamp Students. </p>
-					</div>
-				</div>
-			</footer>
-			<script src="https://kit.fontawesome.com/ade04dfe20.js" crossorigin="anonymous"></script>
-			<script src='https://unpkg.com/headroom.js'></script>
-      <script src="assets/js/script.js"></script>
-      <script src="assets/js/app.js"></script>
+	</section>
+	<footer class="footer is-gray">
+		<div class="container">
+			<div class="content has-text-centered">
+				<p> <strong>#hashtrack</strong> Made with <span style="color: #e25555;"><i class="fas fa-heart"></i></span> by UCF CodingBootCamp Students. </p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://kit.fontawesome.com/ade04dfe20.js" crossorigin="anonymous"></script>
+	<script src='https://unpkg.com/headroom.js'></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/app.js"></script>
 </body>
 
 </html>

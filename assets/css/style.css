@@ -93,10 +93,20 @@ header {
 	display: flex;
 }
 
-.panel-tabs {
-	min-height: 14vh;
-	display: flex;
-	font-size: 14px;
+.tabs li a {
+	color: #5f27cd;
+	border-color: #5f27cd !important;
+}
+
+.tabs a:hover {
+	color: #5f27cd;
+	border-color: #5f27cd !important;
+	background-color: #fff;
+}
+
+.tabs, .is-active a {
+	color: #101010 !important;
+	border-color: #101010 !important;
 }
 
 .heart {
@@ -229,7 +239,8 @@ header {
 	--uiaFieldPaddingLeft: var(--aFieldPaddingLeft);
 	position: relative;
 	padding-top: calc(var(--uiaFieldHintFinalCoordinate) - var(--uiaFieldHeight));
- /* 1, 2 */;
+ /* 1, 2 */
+	;
 }
 
 .a-field__input {
@@ -239,7 +250,8 @@ header {
 	padding-top: 0;
 	padding-bottom: 0;
 	padding-left: var(--uiaFieldPaddingLeft);
- /* 3 */;
+ /* 3 */
+	;
 }
 
 .a-field__input::-webkit-input-placeholder {
@@ -300,7 +312,8 @@ header {
 .a-field__input:focus ~ .a-field__label-wrap .a-field__label {
 	opacity: 1;
 	bottom: var(--uiaFieldHintFinalCoordinate);
- /* 2 */;
+ /* 2 */
+	;
 }
 
 .search {
@@ -458,84 +471,3 @@ header {
 }
 
 /* search form end here */
-
-/* background animation start here */
-#flow span {
-	display: block;
-	width: 200vw;
-	height: 200vw;
-	position: absolute;
-	top: -180vw;
-	left: -50vw;
-	border-radius: 90vw;
-	opacity: 0.6;
-	}
-	.flow-1 {
-	background: #3281ff;
-	-webkit-animation: rotating 20s linear infinite;
-	-moz-animation: rotating 20s linear infinite;
-	-ms-animation: rotating 20s linear infinite;
-	-o-animation: rotating 20s linear infinite;
-	animation: rotating 20s linear infinite;
-	}
-	.flow-2 {
-	background: #f442ee;
-	position: absolute;
-	-webkit-animation: rotating 15s linear infinite;
-	-moz-animation: rotating 15s linear infinite;
-	-ms-animation: rotating 15s linear infinite;
-	-o-animation: rotating 15s linear infinite;
-	animation: rotating 15s linear infinite;
-	}
-	.flow-3 {
-	background: #42eef4;
-	position: absolute;
-	-webkit-animation: rotating 7s linear infinite;
-	-moz-animation: rotating 7s linear infinite;
-	-ms-animation: rotating 7s linear infinite;
-	-o-animation: rotating 7s linear infinite;
-	animation: rotating 7s linear infinite;
-	}
-	@-webkit-keyframes rotating {
-	from {
-	-ms-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-webkit-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-	}
-	to {
-	-ms-transform: rotate(360deg);
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-o-transform: rotate(360deg);
-	transform: rotate(360deg);
-	}
-	}
-	@keyframes rotating {
-	from {
-	-ms-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-webkit-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-	}
-	to {
-	-ms-transform: rotate(360deg);
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-o-transform: rotate(360deg);
-	transform: rotate(360deg);
-	}
-	}
-	.rotating {
-	-webkit-animation: rotating 2s linear infinite;
-	-moz-animation: rotating 2s linear infinite;
-	-ms-animation: rotating 2s linear infinite;
-	-o-animation: rotating 2s linear infinite;
-	animation: rotating 2s linear infinite;
-	}
-	::selection {
-	background-color:#DEF4FF;
-	}
-	/* background animation end here */
